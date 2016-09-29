@@ -1,20 +1,31 @@
 == README
 
-This README would allow you to set up the database
-Things you may want to cover:
+This README would allow the reader to get the basic handle about application and set it up:
 
 * Ruby version used : 2.3.1
 
 * Rails version used : 4.2.6
 
+* Use "bundle install --without production"
+
 * Database creation : db:setup or load it with rake db:seed (to seed database)
 
 * Database initialization : rake db:migrate
+
+* Running the application : rails s (or rails s -p 3000 if necessary)
+
+* Acessing application : http://localhost:3000 (root directory directs to users scaffold page), user http://localhost:3000/articles to add articles (dont forget to add associating user_id to link users to added articles)
+
+* Accessing API responses: http://localhost:3000/api/v1/articles/, http://localhost:3000/api/v1/articles/1, http://localhost:3000/api/v1/owners/, http://localhost:3000/api/v1/users/1
 
 * How to run the test suite : rspec command to run test suites (factory girl used for seeding database for testing API`s)
 
 * Also used Postman to test the API`s successfully, find the attached screenshot for the responses
 
 * Acknowledgement : Responses could have been further curated and customized
+
+* Design : Two scaffolds for adding users and associated articles with i.e. has_many and belongs_to relationship
+
+* API handling : API level seperate from application layer to insulate serialization
 
 <tt>rake doc:app</tt>.
