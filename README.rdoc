@@ -1,28 +1,20 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
+This README would allow you to set up the database
 Things you may want to cover:
 
-* Ruby version
+* Ruby version used : 2.3.1
 
-* System dependencies
+* Rails version used : 4.2.6
 
-* Configuration
+* Database creation : db:setup or load it with rake db:seed (to seed database)
 
-* Database creation
+* Database initialization : rake db:migrate
 
-* Database initialization
+* How to run the test suite : rspec command to run test suites (factory girl used for seeding database for testing API`s)
 
-* How to run the test suite
+* Also used Postman to test the API`s successfully, find the attached screenshot for the responses
 
-* Services (job queues, cache servers, search engines, etc.)
+* Acknowledgement : Responses could have been further curated and customized
 
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
